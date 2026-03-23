@@ -251,14 +251,18 @@
         .profile-avatar {
             width: 150px;
             height: 150px;
-            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            overflow: hidden;
             margin: 0 auto 1.5rem;
-            font-size: 4rem;
-            color: var(--white);
+            border: 4px solid var(--white);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        
+        .profile-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
         }
         
         .profile-name {
@@ -962,7 +966,7 @@
             <div class="hero-image">
                 <div class="profile-card">
                     <div class="profile-avatar">
-                        <i class="fas fa-user"></i>
+                        <img src="images/profile.jpg" alt="Dr. Qilong Li" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, var(--accent-color), var(--secondary-color))'; this.parentElement.innerHTML='<i class=\'fas fa-user\' style=\'font-size: 4rem; color: var(--white);\'></i>';">
                     </div>
                     <h3 class="profile-name">Dr. Qilong Li</h3>
                     <p class="profile-title">Professor of Veterinary Medicine</p>
