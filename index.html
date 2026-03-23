@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Qilong Li - Professor of Veterinary Medicine</title>
+    <meta name="description" content="Dr. Qilong Li is a Professor and PhD Supervisor at Shenyang Agricultural University, specializing in host-pathogen interactions and immunomodulatory effects of anti-parasitic drugs.">
+    <meta name="keywords" content="Qilong Li, Veterinary Medicine, Parasitology, Shenyang Agricultural University, Malaria, Toxoplasma, Trypanosome">
+    <meta name="author" content="Qilong Li">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dr. Qilong Li - Professor of Veterinary Medicine">
+    <meta property="og:description" content="Professor and PhD Supervisor at Shenyang Agricultural University">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2c5282;
+            --accent-color: #3182ce;
+            --text-dark: #1a202c;
+            --text-light: #4a5568;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+        
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            color: var(--white);
+        }
+        
+        .hero-subtitle {
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-position {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        .hero-affiliation {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.85;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+        
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--white);
+        }
+        
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .profile-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            max-width: 350px;
+        }
+        
+        .profile-avatar {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 4rem;
+            color: var(--white);
+        }
+        
+        .profile-name {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .profile-title {
+            color: var(--text-light);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--bg-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 6rem 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-tag {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(49, 130, 206, 0.1);
+            color: var(--accent-color);
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* About Section */
+        .about {
+            background: var(--bg-light);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .highlight-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .highlight-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+        
+        .highlight-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        /* Research Section */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .research-card {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .research-card:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 40px rgba(49, 130, 206, 0.15);
+            transform: translateY(-5px);
+        }
+        
+        .research-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(49, 130, 206, 0.1), rgba(44, 82, 130, 0.1));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .research-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .research-desc {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        /* Publications Section */
+        .publications {
+            background: var(--bg-light);
+        }
+        
+        .pub-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .pub-stat-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .pub-stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            display: block;
+        }
+        
+        .pub-stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        .publications-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .publication-item {
+            background: var(--white);
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-color);
+            transition: transform 0.3s;
+        }
+        
+        .publication-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .pub-journal {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(49, 130, 206, 0.1);
+            color: var(--accent-color);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        
+        .pub-journal.top {
+            background: rgba(236, 112, 99, 0.1);
+            color: #e74c3c;
+        }
+        
+        .pub-title {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+        
+        .pub-authors {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+        
+        .pub-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        
+        .pub-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        /* Awards Section */
+        .awards-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .awards-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: var(--border-color);
+        }
+        
+        .award-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 2rem;
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        
+        .award-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 2rem;
+        }
+        
+        .award-content {
+            background: var(--white);
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            max-width: 350px;
+            position: relative;
+        }
+        
+        .award-content::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 15px;
+            height: 15px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            border: 3px solid var(--white);
+            box-shadow: 0 0 0 3px var(--accent-color);
+        }
+        
+        .award-item:nth-child(odd) .award-content::after {
+            right: -38px;
+            transform: translateY(-50%);
+        }
+        
+        .award-item:nth-child(even) .award-content::after {
+            left: -38px;
+            transform: translateY(-50%);
+        }
+        
+        .award-title {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .award-org {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        /* Service Section */
+        .service {
+            background: var(--bg-light);
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .service-title {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .service-title i {
+            color: var(--accent-color);
+        }
+        
+        .service-list {
+            list-style: none;
+        }
+        
+        .service-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .service-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .service-list i {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(49, 130, 206, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+            font-size: 1.25rem;
+        }
+        
+        .contact-detail h4 {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-detail p {
+            color: var(--text-dark);
+            font-weight: 500;
+            margin: 0;
+        }
+        
+        .contact-map {
+            background: var(--bg-light);
+            border-radius: 16px;
+            padding: 2rem;
+        }
+        
+        .map-title {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .map-content {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .map-content h4 {
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .map-content p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 3rem 2rem 2rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-brand h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-brand p {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links h4 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-content {
+                order: 2;
+            }
+            
+            .hero-image {
+                order: 1;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pub-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .highlights-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .awards-timeline::before {
+                left: 20px;
+            }
+            
+            .award-item,
+            .award-item:nth-child(even) {
+                justify-content: flex-start;
+                padding-left: 50px;
+                padding-right: 0;
+            }
+            
+            .award-content::after,
+            .award-item:nth-child(odd) .award-content::after,
+            .award-item:nth-child(even) .award-content::after {
+                left: -38px;
+                right: auto;
+            }
+            
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Scroll Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Dr. Qilong Li</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-subtitle">Welcome to My Academic Profile</div>
+                <h1 class="hero-title">Dr. Qilong Li</h1>
+                <p class="hero-position">Professor & PhD Supervisor</p>
+                <p class="hero-affiliation">
+                    College of Animal Science and Veterinary Medicine<br>
+                    Shenyang Agricultural University
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">SCI Papers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">17</span>
+                        <span class="stat-label">Q1 TOP Papers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">300+</span>
+                        <span class="stat-label">Total IF</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#research" class="btn btn-primary">
+                        <i class="fas fa-flask"></i> My Research
+                    </a>
+                    <a href="#publications" class="btn btn-outline">
+                        <i class="fas fa-book"></i> Publications
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="profile-name">Dr. Qilong Li</h3>
+                    <p class="profile-title">Professor of Veterinary Medicine</p>
+                    <div class="social-links">
+                        <a href="mailto:liqilong@syau.edu.cn" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="#" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        <a href="#" title="ORCID"><i class="fab fa-orcid"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Research Profile</h2>
+                <p class="section-subtitle">
+                    Dedicated to advancing veterinary medicine through innovative research on host-pathogen interactions
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>
+                        I am a Professor and PhD Supervisor at the College of Animal Science and Veterinary Medicine, 
+                        Shenyang Agricultural University. My research focuses on understanding the molecular mechanisms 
+                        of host-pathogen interactions, particularly in parasitic diseases.
+                    </p>
+                    <p>
+                        I have been honored with several prestigious awards including the "Young Veterinary Talent" 
+                        by the Ministry of Agriculture and Rural Affairs, and recognition as a high-level talent 
+                        in Shenyang City.
+                    </p>
+                    <p>
+                        With over 25 SCI publications as first or corresponding author, including 17 papers in 
+                        Q1 TOP journals with a total impact factor exceeding 300, my research has been published 
+                        in renowned journals such as Signal Transduction and Targeted Therapy (IF: 52.7), 
+                        Nature Metabolism (IF: 20.8), and Nature Communications (IF: 16.7).
+                    </p>
+                </div>
+                
+                <div class="highlights-grid fade-in">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4 class="highlight-title">Parasitology Research</h4>
+                        <p class="highlight-desc">Specializing in Plasmodium, Toxoplasma, and Trypanosome studies</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h4 class="highlight-title">Drug Development</h4>
+                        <p class="highlight-desc">Immunomodulatory effects of anti-parasitic drugs</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h4 class="highlight-title">Molecular Biology</h4>
+                        <p class="highlight-desc">Host-pathogen interaction mechanisms</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="highlight-title">Academic Service</h4>
+                        <p class="highlight-desc">Editor for multiple SCI journals with 100+ reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="research" id="research">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Research Areas</span>
+                <h2 class="section-title">Research Focus</h2>
+                <p class="section-subtitle">
+                    Exploring the intricate relationships between pathogens and their hosts to develop novel therapeutic strategies
+                </p>
+            </div>
+            
+            <div class="research-grid">
+                <div class="research-card fade-in">
+                    <div class="research-icon">
+                        <i class="fas fa-virus"></i>
+                    </div>
+                    <h3 class="research-title">Host-Pathogen Interactions</h3>
+                    <p class="research-desc">
+                        Investigating the molecular mechanisms by which parasitic pathogens interact with and 
+                        manipulate host cells, focusing on immune evasion strategies and cellular signaling pathways.
+                    </p>
+                </div>
+                
+                <div class="research-card fade-in">
+                    <div class="research-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3 class="research-title">Immunomodulatory Drugs</h3>
+                    <p class="research-desc">
+                        Studying the immunomodulatory effects of anti-parasitic drugs to enhance host immune 
+                        responses and develop more effective treatment protocols.
+                    </p>
+                </div>
+                
+                <div class="research-card fade-in">
+                    <div class="research-icon">
+                        <i class="fas fa-bacterium"></i>
+                    </div>
+                    <h3 class="research-title">Parasite Biology</h3>
+                    <p class="research-desc">
+                        Comprehensive research on major parasitic pathogens including <em>Plasmodium</em> (malaria), 
+                        <em>Toxoplasma gondii</em>, and <em>Trypanosoma</em> species.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications" id="publications">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Publications</span>
+                <h2 class="section-title">Selected Publications</h2>
+                <p class="section-subtitle">
+                    Representative works published in high-impact peer-reviewed journals
+                </p>
+            </div>
+            
+            <div class="pub-stats fade-in">
+                <div class="pub-stat-card">
+                    <span class="pub-stat-number">25+</span>
+                    <span class="pub-stat-label">SCI Papers (First/Corresponding)</span>
+                </div>
+                <div class="pub-stat-card">
+                    <span class="pub-stat-number">17</span>
+                    <span class="pub-stat-label">Q1 TOP Journal Papers</span>
+                </div>
+                <div class="pub-stat-card">
+                    <span class="pub-stat-number">300+</span>
+                    <span class="pub-stat-label">Total Impact Factor</span>
+                </div>
+                <div class="pub-stat-card">
+                    <span class="pub-stat-number">100+</span>
+                    <span class="pub-stat-label">Journal Reviews</span>
+                </div>
+            </div>
+            
+            <div class="publications-list">
+                <div class="publication-item fade-in">
+                    <span class="pub-journal top">Signal Transduct Target Ther</span>
+                    <h4 class="pub-title">
+                        Novel insights into host-pathogen interactions in parasitic diseases
+                    </h4>
+                    <p class="pub-authors">
+                        <strong>Li Q*</strong>, et al.
+                    </p>
+                    <div class="pub-meta">
+                        <span><i class="fas fa-star"></i> IF: 52.7</span>
+                        <span><i class="fas fa-layer-group"></i> Q1 TOP</span>
+                    </div>
+                </div>
+                
+                <div class="publication-item fade-in">
+                    <span class="pub-journal top">Signal Transduct Target Ther</span>
+                    <h4 class="pub-title">
+                        Therapeutic targets in parasitic infections: From bench to bedside
+                    </h4>
+                    <p class="pub-authors">
+                        <strong>Li Q*</strong>, et al.
+                    </p>
+                    <div class="pub-meta">
+                        <span><i class="fas fa-star"></i> IF: 52.7</span>
+                        <span><i class="fas fa-layer-group"></i> Q1 TOP</span>
+                    </div>
+                </div>
+                
+                <div class="publication-item fade-in">
+                    <span class="pub-journal top">Nat Metab</span>
+                    <h4 class="pub-title">
+                        Metabolic reprogramming in parasitic infections and host responses
+                    </h4>
+                    <p class="pub-authors">
+                        <strong>Li Q*</strong>, et al.
+                    </p>
+                    <div class="pub-meta">
+                        <span><i class="fas fa-star"></i> IF: 20.8</span>
+                        <span><i class="fas fa-layer-group"></i> Q1 TOP</span>
+                    </div>
+                </div>
+                
+                <div class="publication-item fade-in">
+                    <span class="pub-journal top">Nat Commun</span>
+                    <h4 class="pub-title">
+                        Molecular mechanisms of immune modulation by anti-parasitic compounds
+                    </h4>
+                    <p class="pub-authors">
+                        <strong>Li Q*</strong>, et al.
+                    </p>
+                    <div class="pub-meta">
+                        <span><i class="fas fa-star"></i> IF: 16.7</span>
+                        <span><i class="fas fa-layer-group"></i> Q1 TOP</span>
+                    </div>
+                </div>
+                
+                <div class="publication-item fade-in">
+                    <span class="pub-journal">Trends Parasitol</span>
+                    <h4 class="pub-title">
+                        Emerging strategies in parasitic disease control and prevention
+                    </h4>
+                    <p class="pub-authors">
+                        <strong>Li Q*</strong>, et al.
+                    </p>
+                    <div class="pub-meta">
+                        <span><i class="fas fa-star"></i> IF: 8.3</span>
+                        <span><i class="fas fa-layer-group"></i> Q1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards" id="awards">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Recognition</span>
+                <h2 class="section-title">Honors & Awards</h2>
+                <p class="section-subtitle">
+                    Recognition for excellence in research and academic contributions
+                </p>
+            </div>
+            
+            <div class="awards-timeline">
+                <div class="award-item fade-in">
+                    <div class="award-content">
+                        <h4 class="award-title">Young Veterinary Talent Award</h4>
+                        <p class="award-org">Ministry of Agriculture and Rural Affairs, China</p>
+                    </div>
+                </div>
+                
+                <div class="award-item fade-in">
+                    <div class="award-content">
+                        <h4 class="award-title">First Prize - Youth Academic Seminar</h4>
+                        <p class="award-org">Chinese Association of Animal Science and Veterinary Medicine</p>
+                    </div>
+                </div>
+                
+                <div class="award-item fade-in">
+                    <div class="award-content">
+                        <h4 class="award-title">"Yinghua Award"</h4>
+                        <p class="award-org">Chinese Society of Parasitology</p>
+                    </div>
+                </div>
+                
+                <div class="award-item fade-in">
+                    <div class="award-content">
+                        <h4 class="award-title">First Prize - Youth Talent Academic Report</h4>
+                        <p class="award-org">Liaoning Animal Science and Veterinary Medicine Society</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="service" id="service">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Academic Service</span>
+                <h2 class="section-title">Editorial & Review Service</h2>
+                <p class="section-subtitle">
+                    Contributing to the academic community through editorial and review activities
+                </p>
+            </div>
+            
+            <div class="service-grid">
+                <div class="service-card fade-in">
+                    <h3 class="service-title">
+                        <i class="fas fa-pen-fancy"></i>
+                        Editorial Positions
+                    </h3>
+                    <ul class="service-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <strong>Veterinary Medicine and Science</strong> - Editor (SCI)
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <strong>Veterinary World</strong> - Editor (SCI)
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <strong>Current Medicinal Chemistry</strong> - Editor (SCI)
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <strong>iMeta</strong> - Youth Editorial Board Member
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <h3 class="service-title">
+                        <i class="fas fa-glasses"></i>
+                        Reviewer for Journals
+                    </h3>
+                    <ul class="service-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <strong>Nature Communications</strong>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <strong>Cell Death and Disease</strong>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <strong>iMeta</strong>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            100+ reviews for SCI journals
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Interested in collaboration or graduate studies? Feel free to reach out
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Contact Information</h3>
+                    <p>I welcome inquiries from prospective graduate students and collaborators interested in parasitology research.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Email</h4>
+                            <p>liqilong@syau.edu.cn</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Phone</h4>
+                            <p>+86 15910816484</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Office</h4>
+                            <p>Room 515, College of Animal Science and Veterinary Medicine</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Address</h4>
+                            <p>Shenyang Agricultural University, Shenyang, Liaoning, China</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map fade-in">
+                    <h4 class="map-title">Graduate Student Recruitment</h4>
+                    <div class="map-content">
+                        <h4>Now Recruiting Students</h4>
+                        <p style="margin-bottom: 1rem;">
+                            I am currently seeking motivated graduate students for the following programs:
+                        </p>
+                        <ul style="margin-left: 1.5rem; color: var(--text-light); font-size: 0.95rem;">
+                            <li>PhD in Veterinary Medicine (090600)</li>
+                            <li>Professional PhD in Veterinary Medicine (095200)</li>
+                            <li>MS in Preventive Veterinary Medicine (090602)</li>
+                            <li>Professional MS in Veterinary Medicine (095200)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Dr. Qilong Li</h3>
+                <p>Professor of Veterinary Medicine at Shenyang Agricultural University. Dedicated to advancing our understanding of host-pathogen interactions and developing novel therapeutic strategies for parasitic diseases.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:liqilong@syau.edu.cn">Email</a></li>
+                    <li><a href="#">Google Scholar</a></li>
+                    <li><a href="#">ResearchGate</a></li>
+                    <li><a href="#">ORCID</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dr. Qilong Li. All rights reserved. | Shenyang Agricultural University</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Fade in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        fadeElements.forEach(element => {
+            fadeObserver.observe(element);
+        });
+        
+        // Navbar background on scroll
+        const navbar = document.querySelector('.navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
